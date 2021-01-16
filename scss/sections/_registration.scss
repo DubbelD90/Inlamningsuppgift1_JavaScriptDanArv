@@ -1,0 +1,62 @@
+#registration {
+  font-family: 'Roboto', serif;
+
+  h1 {
+    padding: 0,1rem;
+  }
+
+  a {
+    color: gray;
+  }
+
+  button {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    border: none;
+    :hover {
+      color: black;
+    }
+  }
+  @media (min-width: 1100px) {button {width: 300px;}}
+}
+#usersdiv{
+  h1 {
+    padding-left: 2rem;
+    
+  }
+  .flip{
+    padding-left: 2rem;
+    text-align: left;
+    background-color:#e7e7e7;
+    border-radius: 10px;
+    border: solid 1px white;
+    font-weight: bold;
+    font-size: 1.3em;
+  }
+  .panel {
+    padding-left: 1.5rem;
+    text-align: left;
+    background-color:#e7e7e7;
+    border-radius: 10px;
+    border: solid 1px white;
+    font-size: 1em;
+    display: flex;
+  
+    .fD{
+    
+      display: inline-block;
+      width: 400px;
+      margin: 10px;
+    }
+    .sD{
+      display: inline;
+      width: 400px;
+      margin: 10px;
+    }
+  }  
+}
+
+
