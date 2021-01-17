@@ -27,6 +27,9 @@ document.getElementById('formState').addEventListener('mouseover', stateSelect);
 document.getElementById('formZip').addEventListener('keyup', zipVali);
 document.getElementById('btnsubmit').addEventListener('click', saveUser);
 document.querySelector('#form-user').addEventListener('change', formValidation);
+
+
+
 document.getElementById('btnsubmit').disabled = true;
 //Cancel function
 function cancel(ev){
@@ -115,6 +118,18 @@ function emailVali(){
     return false;
   }
 }
+// function checkEmail(){
+//   for (let i = 0; i < users.length; i++) {
+//     if (users[i].value === user.email.value) {
+//       document.getElementById('formEmailVali').innerText ='That email already exist';
+//       return false;
+//     }
+//     else{
+//       document.getElementById('formEmailVali').innerText = '';
+//       return true;
+//     }
+//   }
+// }
 function phoneVali(){
   var numbers = /^[0-9]+$/;
   if(formPhone.value.match(numbers)){
@@ -132,11 +147,11 @@ function phoneVali(){
   }
 }
 function addressVali(){
-  //var alphanumber = /^[0-9a-öA-Ö]+$/;
+  //var alphaNumber = /^[0-9a-öA-Ö]+$/;
     if(formPostaladdress.value  === '' || formPostaladdress.value == null){
       document.getElementById('formPostalAddressVali').innerText = 'You need to enter a postaladdress';
     }
-    // else if(formPostaladdress.value.match(alphanumber)){
+    // else if(formPostaladdress.value.match(alphaNumber)){
     //   document.getElementById('formPostalAddressVali').innerText = '';
     //   return true;
     // }
@@ -250,6 +265,7 @@ function fillPanel() {
   secondDiv.appendChild(zipElement)
 }
 
+//jQuery functionality
 $("body").delegate(".flip", "click", function(){
   $(this).next(".panel").slideToggle("slow");
 });
