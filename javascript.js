@@ -267,7 +267,7 @@ function fillPanel() {
 
 //jQuery functionality
 $("body").delegate(".flip", "click", function(){
-  $(this).next(".panel").slideToggle("slow");
+  $(".panel").slideToggle("slow");
 });
   
 //  $(".panel").click(function() {
